@@ -1,4 +1,4 @@
-HashCode_length = 8;
+HashCode_length = 128;
 rank = 4;
 alpha1 = 0.000001;
 alpha2 = 10;
