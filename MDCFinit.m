@@ -14,8 +14,8 @@ ZRx = rand(HashCode_length, HashCode_length);
 ZRy = rand(HashCode_length, HashCode_length);
 GRx = rand(HashCode_length, HashCode_length);
 GRy = rand(HashCode_length, HashCode_length);
-B = rand(HashCode_length, size(U,1));
-D = rand(HashCode_length, size(VT,2));
+B = rand(HashCode_length, size(U,1))*2-1;
+D = rand(HashCode_length, size(VT,2))*2-1;
 
 [Vx1, ~, ~] = svd(Wx1 * Wx1');
 Vx1 = Vx1(:,rank + 1 : HashCode_length);
