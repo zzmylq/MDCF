@@ -1,7 +1,7 @@
 # MDCF
  MATLAB code and demo data for paper:  
  **Multi-modality Discrete Collaborative Filtering for Fast Cold-start Recommendation**  
- Yang Xu, Lei Zhu, Zhiyong Cheng, Jingjing Li, Zheng Zhang, Huaxiang Zhang
+ Yang Xu, Lei Zhu, Zhiyong Cheng, Jingjing Li, Zheng Zhang  
  
  We supply the code to train MDCF on BookCrossing dataset in cold-start user recommendation scenario.  
  
