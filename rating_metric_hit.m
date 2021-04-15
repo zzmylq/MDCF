@@ -13,7 +13,7 @@ uind = 1;
 ndcg_all = zeros(num_users - sum(sum(test>0)==0),k);
 neg_num = 999;
 
-for u=1:num_users %对每一个测试id
+for u=1:num_users 
     if user_count(u) == 0
         continue;
     end
@@ -57,11 +57,9 @@ act_ratings = act_col2(:,4);
 for ki = 1:k
     k_ratings = act_ratings(ki:neg_num:size(act_ratings,1));
     for i = 1:size(CS_id,1)
-        target_col = 1; % 要搜索的目标列
-        target_val = i; % 要所搜的目标值
-        [row,~] = find(act_col(:,target_col)==target_val); % 关键语句，使用find()函数
-        %result_row = row; %搜索到的结果
-        %fprintf('%d\n',result_row); % 输出
+        target_col = 1; 
+        target_val = i; 
+        [row,~] = find(act_col(:,target_col)==target_val); 
         
         zong = act_ratings((i-1)*neg_num+1 : (i*neg_num));
         zong_count = sum(zong == k_ratings(i));
